@@ -1,0 +1,72 @@
+@import './partials/params.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 132px;
+    max-width: 960px;
+    width: 100%;
+    font-size: 11px;
+    overflow: hidden;
+    
+    &__elem1 {
+
+        &_title {
+            color: $header-title-color;
+            font-size: 40px;
+        }
+
+        &_text {
+            color: $header-text-color;
+        }
+    }
+
+    &__elem2 {
+        width: 490px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &_text {
+            color: $header-text-color;
+            padding: 0 0 0 15px;
+        }
+
+        &_search {
+            display: flex;
+            align-items: center;
+            width: 210px;
+            height: 25px;
+            background-color: $gradient-color;
+            border-radius: 25px;
+
+            &_input {
+                margin: 0 0 0 10px;
+                border: none;
+                vertical-align: middle;
+                width: 170px;
+                background-color: $gradient-color;
+                outline: none;
+                color: $background-color;
+            }
+
+            &_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18px;
+                height: 18px;
+                background-color: $background-color;
+                border-radius: 50%;
+
+                &_18px {
+                    padding: 5px;
+                    outline: none;
+                }
+
+            }   
+        }
+    }
+}    

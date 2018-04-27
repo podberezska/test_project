@@ -1,0 +1,19 @@
+@import './partials/mixins.scss';
+@import './partials/params.scss';
+
+@include media-breakpoint-down($xs){
+
+    body {
+        max-width: $xs;
+
+        .layout {
+
+            &__categories {
+
+                &_elem {
+                    margin: 30px 10px;
+                }
+            }     
+        }
+    }    
+}
